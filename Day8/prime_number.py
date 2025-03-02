@@ -13,10 +13,10 @@
 # prime(num)
 def prime(num):
     is_prime = True
-    for number in range(1,num):
+    for number in range(2,num):
         if num%number == 0:
-            count += 1
-    if count == 1:
+            is_prime = False
+    if  is_prime:
         print(f"{num} is prime.")
     else :
         print(f"{num} is not a prime number")
